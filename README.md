@@ -7,3 +7,5 @@
 # ขั้นตอนและวิธีการ
 ![img](https://i.imgur.com/aygEtLk.png)
 
+# ผลลัพธ์
+![img](https://i.imgur.com/XsMS0eP.png)
