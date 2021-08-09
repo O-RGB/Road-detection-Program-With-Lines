@@ -66,7 +66,7 @@ def road_detection(img):
     dst = cv2.Canny(img, ret, 200, None, 3)
     cv2.imshow("F",dst) 
     ##ทำเส้น Canny ให้สมูท
-    kernel = cv.getStructuringElement(cv.MORPH_ELLIPSE,(5,5))
+    kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE,(5,5))
     dilation = cv2.dilate(dst,kernel,iterations = 1)
 
     kernel = np.ones((11,11),np.uint8)
@@ -150,7 +150,7 @@ def removeBlackBackground(image):
 
 
 if __name__ == "__main__":
-    img = cv2.imread("Untitled2.png")
+    img = cv2.imread("test.jpg")
     
     ##ส่งไป road_detection และ ลบพื้นสีดำออก removeBlackBackground
     cdst = removeBlackBackground(road_detection(img))
